@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import About from './Pages/About';
 import Projects from './Pages/Projects';
+import './App.css'; // Import the CSS file
 
 function App() {
   return (
@@ -13,10 +14,12 @@ function App() {
         </ul>
       </nav>
 
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </main>
     </Router>
   );
 }
