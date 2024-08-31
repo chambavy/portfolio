@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import About from './Pages/About';
 import Projects from './Pages/Projects';
 import './App.css'; // Import the CSS file
+import Footer from './Components/Footer'; // Adjust the path as necessary
 
 function App() {
 
@@ -36,7 +37,9 @@ function App() {
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
+    
   );
 }
 

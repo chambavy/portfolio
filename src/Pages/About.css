@@ -71,23 +71,23 @@ body, html {
     line-height: 1.6;
   }
   .contact-info {
-    padding: 40px 20px;
-    background: #1e1e1e;
-    text-align: center;
-  }
-  
-  .contact-info h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .social-links a {
-    color: #fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: color 0.3s;
-  }
-  
-  .social-links a:hover {
-    color: #00bfff;
-  }
+  padding: 40px 20px;
+  background: #1e1e1e;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #00bfff;
+}

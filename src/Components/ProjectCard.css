@@ -1,0 +1,67 @@
+/* ProjectCard.css */
+
+.project-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-image {
+    flex: 1;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-details {
+    flex: 2;
+}
+
+.project-details h2 {
+    margin: 0 0 10px;
+}
+
+.project-details p {
+    margin: 0 0 16px;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-github {
+    background-color: #333;
+}
+
+.btn-github:hover {
+    background-color: #000;
+}
+/* ProjectCard.css */
+
+.project-extra-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    color: #ddd;
+}
