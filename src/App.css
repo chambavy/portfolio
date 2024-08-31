@@ -1,20 +1,5 @@
 /* App.css */
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  box-sizing: border-box; /* Apply box-sizing globally */
-}
-
-nav {
-  background-color: #1e1e1e;
-  padding: 1rem;
-  color: white;
-  margin: 0; /* Ensure no margin around nav */
-}
-
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -41,4 +26,46 @@ nav ul li a:hover {
 main {
   padding: 2rem;
   margin: 0; /* Ensure no margin around main */
+}
+/* App.css */
+
+body.light {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+nav {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  color: white;
+}
+
+nav.light {
+  background-color: #ffffff;
+}
+
+nav.light a {
+  color: #000;
+}
+
+nav.dark a {
+  color: #fff;
+}
+
+button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }
