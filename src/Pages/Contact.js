@@ -19,6 +19,36 @@ const ContactPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form Data Submitted:', formData);
+        // Your EmailJS service ID, template ID, and Public Key
+        const serviceId = 'service_erbnv4a';
+        const templateId = 'template_o5lf52x';
+        const publickey = 'GecI0rJ7sMZbwQthG';
+        // Create a new object that contains dynamic template params
+        const templateParams = {
+            from_name: formData.name,
+            from_email: formData.email,
+            to_name: 'Chambavy',
+            message: formData.message,
+            title:formData.title,
+            phonenumber:formData.phone
+        };
+        // Send the email using EmailJS
+        emailjs.send(serviceId, templateId, templateParams, publickey)
+            .then((response) => {
+                console.log('Email sent successfully!', response);
+                // setName('');
+                // setEmail('');
+                // setMessage('');
+                setFormData({ ...formData,
+                    name: '',
+                    email: '',
+                    phone: '',
+                    title: '',
+                    message: ''})
+            })
+            .catch((error) => {
+                    console.error('Error sending email:', error);
+                }); 
         // Handle form submission, e.g., send data to server or email
     };
 
