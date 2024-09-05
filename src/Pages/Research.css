@@ -1,4 +1,4 @@
-/* Research.css */
+/* General styling for research page */
 .research-page {
     padding: 20px;
     background-color: #1e1e1e;
@@ -21,11 +21,9 @@
   .overlay-text {
     position: absolute;
     bottom: 20px;
-    left: 20px;
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
-    border-radius: 8px;
   }
   
   .overlay-text h1 {
@@ -36,12 +34,67 @@
   .overlay-text p {
     margin-top: 10px;
     font-size: 1.1rem;
+    padding: 5px;
   }
   
+  /* Research list styling */
   .research-list {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  
+  /* Media queries for responsive design */
+  
+  /* Tablet view */
+  @media (max-width: 768px) {
+    .Research-image {
+      height: 300px; /* Reduce height of the image for tablets */
+    }
+    .overlay-text {
+        position: absolute;
+        /* bottom: 20px; */
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 5px;
+      }
+      
+    .overlay-text h1 {
+      font-size: 2rem; /* Slightly smaller heading on tablets */
+    }
+  
+    .overlay-text p {
+      font-size: 1rem; /* Adjust font size for better readability */
+    }
+    button {
+        width: 10%; /* Full-width button on mobile */
+        margin-top: 1rem;
+      }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 480px) {
+    .research-page {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .Research-image {
+      height: 250px; /* Smaller height for mobile */
+    }
+
+    
+  
+    .overlay-text h1 {
+      font-size: 1.8rem; /* Smaller heading for mobile */
+    }
+  
+    .overlay-text p {
+      font-size: 0.9rem; /* Reduce paragraph font size */
+    }
+  
+    .research-list {
+      gap: 15px; /* Reduce gap between items for mobile */
+    }
   }
   

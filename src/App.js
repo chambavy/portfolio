@@ -1,16 +1,16 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Researches from './Pages/Research';
-import ContactMe from './Pages/Contact'
+import ContactMe from './Pages/Contact';
 import './App.css'; // Import the CSS file
 import Footer from './Components/Footer'; // Adjust the path as necessary
+import { FaBars, FaMoon, FaSun } from 'react-icons/fa'; // Import Font Awesome icons
 
 function App() {
-
   const [theme, setTheme] = useState('light'); // Default theme
+  const [isNavOpen, setIsNavOpen] = useState(false); // Toggle for dropdown
 
   useEffect(() => {
     // Apply the theme class to the body element
@@ -21,23 +21,30 @@ function App() {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <Router>
       <nav>
-        <ul>
-          <li><Link to="/">About</Link></li>
+        <button className="menu-icon" onClick={toggleNav}>
+          <FaBars />
+        </button>
+        <ul className={isNavOpen ? 'open' : ''}>
+          <li><Link to="/portfolio">About</Link></li>
           <li><Link to="/projects">Projects</Link></li>
           <li><Link to="/researches">Researches</Link></li>
-          <li><Link to="/contact">Contact Me</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
-        <button onClick={toggleTheme}>
-          Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
+        <button className="theme-switch-icon" onClick={toggleTheme}>
+          {theme === 'light' ? <FaMoon /> : <FaSun />}
         </button>
       </nav>
 
       <main>
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/portfolio" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/researches" element={<Researches />} />
           <Route path="/contact" element={<ContactMe />} />
@@ -45,7 +52,6 @@ function App() {
       </main>
       <Footer />
     </Router>
-    
   );
 }
 
