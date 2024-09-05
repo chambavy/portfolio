@@ -1,34 +1,35 @@
-// ProjectsPage.js
+// ResearchPage.js
 import React from 'react';
-import "./Projects.css"; // Import the CSS file
-import ProjectCard from '../Components/ProjectCard';
-import projectData from '../Data/ProjetData';
+import "./Research.css";
+import ResearchCard from '../Components/ResearchCard';
+import researchData from '../Data/ResearchData';
 
-const ProjectsPage = () => {
+const ResearchPage = () => {
   return (
-    <div className="projects-page">
-      <div className="projects-image">
-        <img src="https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Friend's Name" />
+    <div className="research-page">
+      <div className="Research-image">
+        <img src="https://images.pexels.com/photos/27277185/pexels-photo-27277185/free-photo-of-3d.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Friend's Name" />
         <div className="overlay-text">
-          <h1>Research</h1>
+        <h1>My Research Work</h1>
           <p>
-          My public ML portfolio includes projects on different topics, including generative AI, NLP, computer vision, and tabular data. To see more of my work, visit my GitHub page, download my <a href="link-to-cv.pdf">CV</a> or check out the <a href="/">about</a> page.
+          My Research works spans over different topics, including generative AI, NLP, computer vision, and tabular data. To see more of my work, visit my GitHub page, download my <a href="link-to-cv.pdf">CV</a> or check out the <a href="/">about</a> page.
           </p>
         </div>
       </div>
-      {projectData.map((project, index) => (
-        <ProjectCard
-          key={index}
-          title={project.title}
-          description={project.description}
-          imageUrl={project.imageUrl}
-          githubLink={project.githubLink}
-          //projectDetails
-          projectDetails={project.projectDetails}
-        />
-      ))}
+      <div className="research-list">
+        {researchData.map((research, index) => (
+          <ResearchCard
+            key={index}
+            title={research.title}
+            subTitle={research.subTitle}
+            summary={research.summary}
+            referenceLink={research.referenceLink}
+            moreDetails={research.moreDetails}
+          />
+        ))}
+      </div>
     </div>
   );
 };
 
-export default ProjectsPage;
+export default ResearchPage;

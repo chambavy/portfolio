@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
+import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({
@@ -29,8 +30,8 @@ const ContactPage = () => {
             from_email: formData.email,
             to_name: 'Chambavy',
             message: formData.message,
-            title:formData.title,
-            phonenumber:formData.phone
+            title: formData.title,
+            phonenumber: formData.phone
         };
         // Send the email using EmailJS
         emailjs.send(serviceId, templateId, templateParams, publickey)
@@ -39,16 +40,18 @@ const ContactPage = () => {
                 // setName('');
                 // setEmail('');
                 // setMessage('');
-                setFormData({ ...formData,
+                setFormData({
+                    ...formData,
                     name: '',
                     email: '',
                     phone: '',
                     title: '',
-                    message: ''})
+                    message: ''
+                })
             })
             .catch((error) => {
-                    console.error('Error sending email:', error);
-                }); 
+                console.error('Error sending email:', error);
+            });
         // Handle form submission, e.g., send data to server or email
     };
 
@@ -83,7 +86,22 @@ const ContactPage = () => {
 
                 <button type="submit">Send Message</button>
             </form>
+            <div className="contact-info">
+                <h3>Or contact me on</h3>
+                <div className="social-links">
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <FaLinkedin size={30} />
+                    </a>
+                    <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <FaGithub size={30} />
+                    </a>
+                    <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <FaTwitter size={30} />
+                    </a>
+                </div>
+            </div>
         </div>
+
     );
 };
 

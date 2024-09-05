@@ -1,0 +1,47 @@
+/* Research.css */
+.research-page {
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  .Research-image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .Research-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  .overlay-text h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .overlay-text p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .research-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
