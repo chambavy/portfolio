@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="header-image">
-        <img src="https://images.stockcake.com/public/5/4/3/5437492b-d14f-4ebc-b8f3-7818f22b27cc_large/studying-in-library-stockcake.jpg" alt="Friend's Name" />
+        <img src="https://media.licdn.com/dms/image/v2/C5103AQH1sxzSTGmRiA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1564073675035?e=1730937600&v=beta&t=u_W2jaqdaI22VScN4Y-l8Q3Tt4BihKq6vGzrlV611c4" alt="profile" />
         <div className="overlay-text">
           <h1>Hi, I am Arunn!</h1>
           <p>

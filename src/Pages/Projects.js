@@ -8,7 +8,7 @@ const ProjectsPage = () => {
   return (
     <div className="projects-page">
       <div className="projects-image">
-        <img src="https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Friend's Name" />
+        <img src="https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169861.jpg?ga=GA1.1.1677905507.1725530386&semt=ais_hybrid" alt="Friend's Name" />
         <div className="overlay-text">
           <h1>Portfolio</h1>
           <p>

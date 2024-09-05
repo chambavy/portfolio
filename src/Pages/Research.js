@@ -8,7 +8,7 @@ const ResearchPage = () => {
   return (
     <div className="research-page">
       <div className="Research-image">
-        <img src="https://images.pexels.com/photos/27277185/pexels-photo-27277185/free-photo-of-3d.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Friend's Name" />
+        <img src="https://img.freepik.com/free-photo/military-operations-control-room-used-following-global-threats_482257-90107.jpg?t=st=1725530495~exp=1725534095~hmac=c628170b91e9aefa141f3c24d416883cc0939ea32bf806b83cc605fa9eec72d0&w=1060" alt="Friend's Name" />
         <div className="overlay-text">
         <h1>My Research Work</h1>
           <p>
