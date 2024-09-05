@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://github.com/chambavy/portfolio",
+  "homepage": "https://chambavy.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
