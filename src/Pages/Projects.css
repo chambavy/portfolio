@@ -1,0 +1,53 @@
+/* Projects.css */
+.projects-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.projects-image {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+    /* Ensure the width matches the About page */
+    width: calc(100% - 600px);
+}
+
+.projects-image img {
+    width: 100%;
+
+}
+
+.project-card {
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    /* Ensure the width matches the About page */
+    width: calc(100% - 600px);
+    /* Matching margins from About page */
+    text-align: left;
+}
+
+.project-card img {
+    max-height: 300px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.project-card h2 {
+    margin: 16px 0 8px;
+}
+
+.project-card p {
+    margin: 0 0 16px;
+}
+
+.project-card a {
+    color: #1e90ff;
+    text-decoration: none;
+}
