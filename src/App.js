@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Researches from './Pages/Research';
+import ContactMe from './Pages/Contact'
 import './App.css'; // Import the CSS file
 import Footer from './Components/Footer'; // Adjust the path as necessary
 
@@ -27,6 +28,7 @@ function App() {
           <li><Link to="/">About</Link></li>
           <li><Link to="/projects">Projects</Link></li>
           <li><Link to="/researches">Researches</Link></li>
+          <li><Link to="/contact">Contact Me</Link></li>
         </ul>
         <button onClick={toggleTheme}>
           Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
@@ -38,6 +40,7 @@ function App() {
           <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/researches" element={<Researches />} />
+          <Route path="/contact" element={<ContactMe />} />
         </Routes>
       </main>
       <Footer />
