@@ -28,13 +28,15 @@ body, html {
   
   .overlay-text {
     position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: auto;
-    background: rgba(0, 0, 0, 0.5);
-    /* padding: 10px; */
-    border-radius: 5px;
-  }
+    bottom: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    width: 100%; /* Extend the background to full width */
+    left: 0; /* Align it with the left edge */
+    box-sizing: content-box; /* Ensure padding is within the width */
+}
+
   
   .overlay-text h1 {
     font-size: 2.5rem;
@@ -44,6 +46,7 @@ body, html {
   .overlay-text p {
     font-size: 1.2rem;
     margin-top: 10px;
+    padding: 5px;
   }
   
   .overlay-text a {
