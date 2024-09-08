@@ -4,6 +4,7 @@ import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Researches from './Pages/Research';
 import ContactMe from './Pages/Contact';
+import ProjectExtraPage from './Components/ProjectExtraPage';
 import './App.css'; // Import the CSS file
 import Footer from './Components/Footer'; // Adjust the path as necessary
 import { FaBars, FaMoon, FaSun } from 'react-icons/fa'; // Import Font Awesome icons
@@ -46,6 +47,7 @@ function App() {
         <Routes>
           <Route path="/portfolio" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectExtraPage />} />
           <Route path="/researches" element={<Researches />} />
           <Route path="/contact" element={<ContactMe />} />
         </Routes>

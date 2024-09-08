@@ -25,6 +25,7 @@ const ProjectsPage = () => {
           githubLink={project.githubLink}
           //projectDetails
           projectDetails={project.projectDetails}
+          id={project.id}
         />
       ))}
     </div>
